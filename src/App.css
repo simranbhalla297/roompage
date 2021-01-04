@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
+* {
+  margin: 0;
+  padding: 0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.swiper_container {
+  background-color: darksalmon;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.5rem 1rem;
+  margin-bottom: -60px;
+  z-index: 3;
+}
+.navbar-light .navbar-nav .nav-link {
+  /* color: rgba(0,0,0,.5); */
+  color: #fff !important;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  height: auto;
+  padding: 15%;
+}
+.content h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: black;
+  max-width: 23rem;
+}
+.content p {
+  line-height: 1.1rem;
+  font-size: 0.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #a1a1a1;
+}
+img {
+  width: 100%;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.swiper_container {
+  height: auto;
+}
+/*section*/
+.section {
+  overflow: hidden;
+  background-color: blue;
+}
+.section_container {
+  max-width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section_text {
+  padding: 2.5rem;
+  max-width: 50rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: -100px;
+    z-index: 3;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-nav {
+    display: flex;
+    background-color: black;
+    flex-direction: row !important;
+    justify-content: space-around !important;
   }
 }
